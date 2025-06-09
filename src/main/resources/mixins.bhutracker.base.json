@@ -1,13 +1,13 @@
 {
   "required": true,
-  "package": "brokenheart_undershirt.mixin.NoneRLCraft",
-  "refmap": "mixins.brokenheart_undershirt.refmap.json",
+  "package": "bhutracker.mixin.base",
+  "refmap": "mixins.bhutracker.refmap.json",
   "compatibilityLevel": "JAVA_8",
   "target": "@env(DEFAULT)",
   "minVersion": "0.8",
   "mixins": [
-    "BrokenheartActivated",
-    "UndershirtActivated"
+    "ItemTrinketBrokenHeartMixin",
+    "TraitUndershirtMixin"
   ],
   "injectors": {
     "maxShiftBy": 10

@@ -1,4 +1,4 @@
-package brokenheart_undershirt;
+package bhutracker;
 
 import java.util.Map;
 import fermiumbooter.FermiumRegistryAPI;
@@ -11,9 +11,9 @@ public class MixinPlugin implements IFMLLoadingPlugin {
 
 	public MixinPlugin() {
 		MixinBootstrap.init();
-		//False for Vanilla/Coremod mixins, true for regular mod mixins
-		FermiumRegistryAPI.enqueueMixin(true, "mixins.none_rlcraft.mixin.json", () -> !Loader.isModLoaded("rlmixins"));
-		FermiumRegistryAPI.enqueueMixin(true, "mixins.rlcraft.mixin.json", () -> Loader.isModLoaded("rlmixins"));
+
+		FermiumRegistryAPI.enqueueMixin(true, "mixins.bhutracker.base.json", () -> !Loader.isModLoaded("rlmixins"));
+		FermiumRegistryAPI.enqueueMixin(true, "mixins.bhutracker.rlmixins.json", () -> Loader.isModLoaded("rlmixins"));
 	}
 
 	@Override
