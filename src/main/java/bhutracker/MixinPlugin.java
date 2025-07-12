@@ -12,8 +12,8 @@ public class MixinPlugin implements IFMLLoadingPlugin {
 	public MixinPlugin() {
 		MixinBootstrap.init();
 
-		FermiumRegistryAPI.enqueueMixin(true, "mixins.bhutracker.base.json", () -> !Loader.isModLoaded("rlmixins"));
-		FermiumRegistryAPI.enqueueMixin(true, "mixins.bhutracker.rlmixins.json", () -> Loader.isModLoaded("rlmixins"));
+		FermiumRegistryAPI.enqueueMixin(true, "mixins.bhutracker.base.json", () -> !Loader.isModLoaded("fermiummixins"));
+		FermiumRegistryAPI.enqueueMixin(true, "mixins.bhutracker.fermiummixins.json", () -> Loader.isModLoaded("fermiummixins"));
 	}
 
 	@Override
